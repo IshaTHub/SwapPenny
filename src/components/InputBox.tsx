@@ -54,7 +54,7 @@ const InputBox: React.FC<InputBoxProps> = ({
           onChange={(e) => onCurrencyChange && onCurrencyChange(e.target.value)}
           disabled={currencyDisabled}
         >
-          {currencyOption.map((currency: string) => (
+          {currencyOption.map((currency) => (
             // Key is mandatory when rendering lists in JSX to avoid reconciliation issues
             <option key={currency} value={currency}>
               {currency}

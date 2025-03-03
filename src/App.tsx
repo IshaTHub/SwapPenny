@@ -26,10 +26,13 @@ function App() {
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1521897258701-21e2a01f5e8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+        backgroundImage: `url('https://img.freepik.com/free-photo/heap-chocolate-coins_23-2147748111.jpg?t=st=1741001514~exp=1741005114~hmac=82b1035e1b120574c800b0aae6df0341ac1f5dfa078733c480274014effc029f&w=1060')`,
       }}
     >
-      <div className="w-full">
+      <h1 className="text-6xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text drop-shadow-lg mb-4">
+        Swap Penny
+      </h1>
+      <div className="w-full flex flex-col items-center">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
             onSubmit={(e) => {
@@ -42,8 +45,9 @@ function App() {
                 label="From"
                 amount={amount}
                 currencyOption={options}
-                onCurrencyChange={(currency) => setFrom(currency)}
+                onCurrencyChange={(currency) => setAmount(amount)}
                 selectCurrency={from}
+                onAmountChange={(amount) => setAmount(amount)}
               />
             </div>
             <div className="relative w-full h-0.5">
