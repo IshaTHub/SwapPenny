@@ -29,9 +29,13 @@ function App() {
         backgroundImage: `url('https://img.freepik.com/free-photo/heap-chocolate-coins_23-2147748111.jpg?t=st=1741001514~exp=1741005114~hmac=82b1035e1b120574c800b0aae6df0341ac1f5dfa078733c480274014effc029f&w=1060')`,
       }}
     >
-      <h1 className="text-6xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text drop-shadow-lg mb-4">
+      <h1
+        className="text-5xl font-extrabold drop-shadow-lg mb-4 leading-tight 
+               text-black md:bg-gradient-to-r md:from-yellow-400 md:to-orange-600 md:text-transparent md:bg-clip-text"
+      >
         Swap Penny
       </h1>
+
       <div className="w-full flex flex-col items-center">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
           <form
