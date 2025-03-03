@@ -24,15 +24,8 @@ function App() {
   };
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
-      style={{
-        backgroundImage: `url('https://img.freepik.com/free-photo/heap-chocolate-coins_23-2147748111.jpg?t=st=1741001514~exp=1741005114~hmac=82b1035e1b120574c800b0aae6df0341ac1f5dfa078733c480274014effc029f&w=1060')`,
-      }}
-    >
-      <h1
-        className="text-5xl font-extrabold drop-shadow-lg mb-4 leading-tight 
-               text-black md:bg-gradient-to-r md:from-yellow-400 md:to-orange-600 md:text-transparent md:bg-clip-text"
-      >
+    className="w-full min-h-screen flex flex-col justify-start items-center py-10 bg-cover bg-no-repeat bg-gradient-to-r from-gray-800 via-blue-700 to-gray-900">
+      <h1 className="text-6xl font-extrabold drop-shadow-lg mb-20 mt-20 leading-tight text-white">
         Swap Penny
       </h1>
 
